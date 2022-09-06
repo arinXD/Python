@@ -47,9 +47,9 @@ def login():
     if Username in u:
         index = u.index(Username)
     
-    if Username == 'Admin' and (Password == '136635' or Password == '4206'):
+    if Username == 'admin' and (Password == '136635' or Password == '4206' or Password == 'admin'):
         def menu_admin():
-            print('Account & ID  : a')
+            print('Account name & ID  : a')
             print('Average money : b')
             print('Exit : exit\n')
             menu = input('menu: ')
