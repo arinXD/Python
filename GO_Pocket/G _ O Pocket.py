@@ -1,3 +1,17 @@
+def printLogo():
+    print("")
+    print('   ___        ___          ___    ___     ___   _  __  ___   _____ ')
+    print('  / __|      / _ \        | _ \  / _ \   / __| | |/ / | __| |_   _|')
+    print(" | (_ |  _  | (_) |  _    |  _/ | (_) | | (__  | ' <  | _|    | |  ")
+    print("  \___| (_)  \___/  (_)   |_|    \___/   \___| |_|\_\ |___|   |_|")
+
+def printInfo(name, id, amount):
+    print("-"*75)
+    print('Name : ' + name)
+    print('ID     : ' + id)
+    print('Amount :', amount,'THB.')
+    print('-'*75)
+
 def login():
     ######################### check login #####################
     ### main data ###
@@ -83,31 +97,15 @@ def login():
         
         #### check amount ####
         if menu == '1' :
-            print("")
-            print('   ___        ___          ___    ___     ___   _  __  ___   _____ ')
-            print('  / __|      / _ \        | _ \  / _ \   / __| | |/ / | __| |_   _|')
-            print(" | (_ |  _  | (_) |  _    |  _/ | (_) | | (__  | ' <  | _|    | |  ")
-            print("  \___| (_)  \___/  (_)   |_|    \___/   \___| |_|\_\ |___|   |_|")
-            print("-"*75)
-            print('Name : ' + Username)
-            print('ID     : ' + data_id[Username])
-            print('Amount :', data_amount[Username],'THB.')
-            print('-'*75)
+            printLogo()
+            printInfo(Username, data_id[Username], data_amount[Username])
             menu_login()
         ######################################################
                     
         #### Deposit ####
         elif menu == '2':
-            print("")
-            print('   ___        ___          ___    ___     ___   _  __  ___   _____ ')
-            print('  / __|      / _ \        | _ \  / _ \   / __| | |/ / | __| |_   _|')
-            print(" | (_ |  _  | (_) |  _    |  _/ | (_) | | (__  | ' <  | _|    | |  ")
-            print("  \___| (_)  \___/  (_)   |_|    \___/   \___| |_|\_\ |___|   |_|")
-            print("-"*75)
-            print('Name : ' + Username)
-            print('ID     : ' + data_id[Username])
-            print('Amount :', data_amount[Username],'THB.')
-            print('-'*75)
+            printLogo()
+            printInfo(Username, data_id[Username], data_amount[Username])
 
             deposited = input('Cash : ')
             password_deposit = input('Password : ')
@@ -149,16 +147,8 @@ def login():
 
         #### Withdrawn ####
         elif menu == '3':
-            print("")
-            print('   ___        ___          ___    ___     ___   _  __  ___   _____ ')
-            print('  / __|      / _ \        | _ \  / _ \   / __| | |/ / | __| |_   _|')
-            print(" | (_ |  _  | (_) |  _    |  _/ | (_) | | (__  | ' <  | _|    | |  ")
-            print("  \___| (_)  \___/  (_)   |_|    \___/   \___| |_|\_\ |___|   |_|")
-            print("-"*75)
-            print('Name : ' + Username)
-            print('ID     : ' + data_id[Username])
-            print('Amount :', data_amount[Username],'THB.')
-            print('-'*75)
+            printLogo()
+            printInfo(Username, data_id[Username], data_amount[Username])
 
             withdrawn = input('Cash : ')
             password_withdrawn = input('Password : ')
@@ -203,16 +193,8 @@ def login():
 
         #### Tranfer ####
         elif menu == '4':
-            print("")
-            print('   ___        ___          ___    ___     ___   _  __  ___   _____ ')
-            print('  / __|      / _ \        | _ \  / _ \   / __| | |/ / | __| |_   _|')
-            print(" | (_ |  _  | (_) |  _    |  _/ | (_) | | (__  | ' <  | _|    | |  ")
-            print("  \___| (_)  \___/  (_)   |_|    \___/   \___| |_|\_\ |___|   |_|")
-            print("-"*75)
-            print('Name : ' + Username)
-            print('ID     : ' + data_id[Username])
-            print('Amount :', data_amount[Username],'THB.')
-            print('-'*75)
+            printLogo()
+            printInfo(Username, data_id[Username], data_amount[Username])
                 
             tranfer_id = input('ID (คนรับ): ')
             tranfer_input = input('Cash: ')
@@ -277,16 +259,8 @@ def login():
 
         #### Transaction ####
         elif menu == '5':
-            print("")
-            print('   ___        ___          ___    ___     ___   _  __  ___   _____ ')
-            print('  / __|      / _ \        | _ \  / _ \   / __| | |/ / | __| |_   _|')
-            print(" | (_ |  _  | (_) |  _    |  _/ | (_) | | (__  | ' <  | _|    | |  ")
-            print("  \___| (_)  \___/  (_)   |_|    \___/   \___| |_|\_\ |___|   |_|")
-            print("-"*75)
-            print('Name : ' + Username)
-            print('ID     : ' + data_id[Username])
-            print('Amount :', data_amount[Username],'THB.')
-            print('-'*75)
+            printLogo()
+            printInfo(Username, data_id[Username], data_amount[Username])
             print('   Date        Time     Transaction\n')
             with open('date.txt','r') as date:
                 for line in date:
@@ -357,11 +331,7 @@ def login():
             
     #login succes          
     if Username in data_password and data_password[Username] == Password:
-        print("")
-        print('   ___        ___          ___    ___     ___   _  __  ___   _____ ')
-        print('  / __|      / _ \        | _ \  / _ \   / __| | |/ / | __| |_   _|')
-        print(" | (_ |  _  | (_) |  _    |  _/ | (_) | | (__  | ' <  | _|    | |  ")
-        print("  \___| (_)  \___/  (_)   |_|    \___/   \___| |_|\_\ |___|   |_|")
+        printLogo()
         print("-"*75)
         print('Name : ' + Username)
         print('-'*75)
