@@ -1,0 +1,6 @@
+int0 = int(input("Enter Integer : "))
+print(int0,'x','1','=',int0*1)
+print(int0,'x','2','=',int0*2)
+print(int0,'x','3','=',int0*3)
+print(int0,'x','4','=',int0*4)
+print(int0,'x','5','=',int0*5)

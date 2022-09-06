@@ -1,0 +1,13 @@
+=== Overload ===
+Jean = phone, pen, wallet, books, jacket, juice, laptop
+Klee = memopad, wallet, fish, books, cola, flashlight
+
+=== Liquid ===
+Jean = juice
+Diluc = wine
+Klee = cola
+
+=== Electric ===
+Jean = phone, laptop
+Diluc = phone
+Lisa = phone, tablet

@@ -1,0 +1,7 @@
+ABA	1
+ABC	0
+EDDE	1
+1191	0
+no lemon, no melon	1
+noharashinnosuke	0
+never odd or even	1

@@ -1,0 +1,6 @@
+student_id, name, score1, score2, score3
+ST001, Diona, 10, 8, 8
+ST002, Klee, 6, 8
+ST003, Mona, 10, 10, 10
+ST004, Razor, 6, 7, 7
+ST005, Timmie, 8, 0, 8
