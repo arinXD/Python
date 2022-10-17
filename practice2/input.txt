@@ -1,0 +1,4 @@
+Jean|120|phone:15,pen:10,wallet:15|books:20,jacket:20,juice:30,laptop:50
+Diluc|150|phone:15,cap:5,wallet:15|wine:60
+Lisa|100|phone:10,book:10,wallet:15|books:30,tablet:25
+Klee|80|memopad:5,wallet:10|fish:20,books:25,cola:20,flashlight:10

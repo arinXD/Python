@@ -1,0 +1,3 @@
+Over weight = Jean, Klee
+Liquid = Jean(juice) | Diluc(wine) | Klee(cola)
+Electronic = Jean(phone, laptop) | Diluc(phone) | Lisa(phone, tablet)
